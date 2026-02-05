@@ -5,3 +5,10 @@ export function noBoringZeros(n: number): number {
     }
     return Number(num)
 }
+
+export function noBoringZero(n: number): number {
+  while(n%10 === 0 && n!== 0){
+    n/=10
+  }
+  return n;
+}
